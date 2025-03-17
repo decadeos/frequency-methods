@@ -248,8 +248,54 @@ u(t) = g(t) + 0.5\xi(t) + 0\sin(dt),
 
 \end{itemize}
 
+\subsubsection{Фиксирую \(\nu_0\)}
 
+Для этого задания выберу несколько значений \(b = \set{0, 0.5, 1, 2}\),
+чтобы исследовать поведение графиков при фиксированном значении \(\nu_0\ = 3\).
+Это значение было выбрано, поскольку ранее мне показалось, что при этом значении
+сигнал хорошо фильтруется.
+Ниже рассмотрим эти графики:
 
+\begin{figure}[H]  
+    \centering
+    \includegraphics[width=1\textwidth]{../images/1.1_0_3.png}
+    \caption{Графики при \(\nu_0 = 3\) и \(b = 0\)}  
+    \label{fig:my_image}  
+\end{figure}
+
+\begin{figure}[H]  
+    \centering
+    \includegraphics[width=1\textwidth]{../images/1.1_0.5_3.png}
+    \caption{Графики при \(\nu_0 = 3\) и \(b = 0.5\)}  
+    \label{fig:my_image}  
+\end{figure}
+
+\begin{figure}[H]  
+    \centering
+    \includegraphics[width=1\textwidth]{../images/1.1_1_3.png}
+    \caption{Графики при \(\nu_0 = 3\) и \(b = 1\)}  
+    \label{fig:my_image}  
+\end{figure}
+
+\begin{figure}[H]  
+    \centering
+    \includegraphics[width=1\textwidth]{../images/1.1_2_3.png}
+    \caption{Графики при \(\nu_0 = 3\) и \(b = 2\)}  
+    \label{fig:my_image}  
+\end{figure}
+
+\subsubsection{Вывод}
+
+\begin{itemize}
+    \item При увеличении \(b\) увеличивается шум, а также растет число колебаний
+    синего графика. То есть чем больше шум, тем больше помех в отфильтрованном сигнале
+    . Идеальным графиком будет первый, поскольку шума совсем нет, 
+    соответственно мы фактически фильтруем не зашумленный сигнал, а идеальный.
+
+    \item Спектр отфильтрованного сигнала близок к спектру \(g(t)\), но остаются небольшие шумовые компоненты.
+    Различия между модулями фурье-образов слабо заметны при моих параметрах \(b\).
+
+\end{itemize}
 
 
 
