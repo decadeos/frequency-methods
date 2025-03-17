@@ -1,0 +1,168 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[english, russian]{babel}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{listings}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{amsmath}
+\graphicspath{ {./images/} }
+\geometry{left=2cm, right=2cm, bottom=2cm, top=2cm}
+
+\hypersetup{
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan
+}
+
+\lstset{
+    backgroundcolor=\color{white},
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!40!black},
+    stringstyle=\color{darkblue},
+    showstringspaces=false,
+    tabsize=4,
+    language=Mathematica
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstdefinestyle{codestyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{magenta},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\lstset{style=codestyle}
+\lstset{extendedchars=\true}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+
+    {\large Министерство науки и высшего образования Российской Федерации}\\
+    {\large ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ АВТОНОМНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ «НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ ИТМО»}\\
+    {\large (УНИВЕРСИТЕТ ИТМО)}\\
+
+    \vspace{2cm}
+
+    {\large Факультет «Систем управления и робототехники»}\\
+
+    \vspace{3cm}
+
+    \textbf{{\Huge ОТЧЕТ}\\
+    {\Huge О ЛАБОРАТОРНОЙ РАБОТЕ №3}}\\
+
+    \vspace{1cm}
+
+    {\LARGE По дисциплине «Частотные методы»}\\
+    {\LARGE на тему: «Жесткая фильтрация»}\\
+
+    \vspace{3cm}
+
+    {\Large Студент:}\\
+    Охрименко Ева
+
+    \vspace{2cm}
+
+    {\Large Преподаватели:}\\
+    Догадин Егор Витальевич\\
+    Пашенко Артем Витальевич\\
+
+    \vspace{3cm}
+    {\large г. Санкт-Петербург}\\
+    {\large 2025}
+
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Task. Жесткие фильтры}
+\subsection{Краткое условие}
+
+Рассмотрите функцию \( g(t) \), заданную как:
+\[
+g(t) = 
+\begin{cases} 
+a, & t \in [t_1, t_2], \\
+0, & t \notin [t_1, t_2],
+\end{cases}
+\]
+и её зашумлённую версию:
+\[
+u(t) = g(t) + b\xi(t) + c \sin(dt),
+\]
+где \(\xi(t) \sim U[-1, 1]\) — белый шум, а \( b, c, d \) — параметры.
+
+\begin{itemize}
+\item При \( c = 0 \) найдите Фурье-образ \( u(t) \), обнулите его вне \([- \nu_0, \nu_0]\) и выполните обратное преобразование. Исследуйте влияние \( \nu_0 \) и \( b \).
+
+\item При ненулевых \( b, c, d \) обнулите Фурье-образ на выбранных частотах, подавляя шум и гармонику. Исследуйте влияние параметров.
+
+\item бнулите Фурье-образ в окрестности \( \nu = 0 \), пропустите сигнал через фильтр и оцените результат.
+\end{itemize}
+\textbf{Ожидаемые результаты:} \\
+Графики исходного, зашумлённого и фильтрованного сигналов, а также их Фурье-образов. Выводы по каждому пункту.
+
+\subsection{Убираем высокие частоты}
+\subsubsection{Предподготовка}
+Для начала выберу все нужные параметры для этого задания.
+
+
+
+
+
+
+\subsection{Убираем специфические частоты}
+\subsection{Убираем низкие частоты?}
+
+
+
+
+\section{Task. Фильтрация звука}
+\subsection{Краткое условие}
+
+\end{document}
